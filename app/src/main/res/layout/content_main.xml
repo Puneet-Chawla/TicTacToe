@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.student.tictactoe.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:tag="0"
+            android:src="@drawable/white"
+            android:id="@+id/imageView0"
+            android:layout_width="96dp"
+            android:layout_height="133dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="0dp" />
+
+        <ImageView
+            android:tag="5"
+            android:src="@drawable/white"
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="112dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:tag="7"
+            android:src="@drawable/white"
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="84dp"
+            android:layout_row="2"
+            android:onClick="gameLogic"
+            android:layout_column="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:tag="1"
+            android:src="@drawable/white"
+            android:layout_width="107dp"
+            android:layout_height="138dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:id="@+id/imageView1"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:tag="2"
+            android:src="@drawable/white"
+            android:layout_width="100dp"
+            android:layout_height="138dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:id="@+id/imageView2"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:tag="6"
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_row="2"
+            android:src="@drawable/white"
+            android:layout_column="0"
+            android:onClick="gameLogic"
+            android:layout_marginTop="0dp" />
+
+        <ImageView
+            android:tag="4"
+            android:src="@drawable/white"
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="117dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:tag="3"
+            android:src="@drawable/white"
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="153dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="gameLogic"
+            android:layout_marginTop="40dp" />
+
+        <ImageView
+            android:tag="8"
+            android:src="@drawable/white"
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="97dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="gameLogic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+
+            android:elevation="2dp" />
+
+    </GridLayout>
+
+    p
+</RelativeLayout>
